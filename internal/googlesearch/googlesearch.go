@@ -106,3 +106,9 @@ func (g *GoogleSearch) InURL(value string) *GoogleSearch {
 	g.tags = append(g.tags, joinTag("inurl:", value, true))
 	return g
 }
+
+// L
+func (g *GoogleSearch) Link(value string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("link:", value, true))
+	return g
+}
