@@ -54,3 +54,15 @@ func (b *BingSearch) FileType(value string) *BingSearch {
 	b.tags = append(b.tags, joinTag("filetype:", value, true))
 	return b
 }
+
+// I
+
+func (b *BingSearch) InBody(value string) *BingSearch {
+	b.tags = append(b.tags, joinTag("inbody:", value, true))
+	return b
+}
+
+func (b *BingSearch) InTitle(value string) *BingSearch {
+	b.tags = append(b.tags, joinTag("intitle:", value, true))
+	return b
+}
