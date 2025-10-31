@@ -29,3 +29,4 @@ func main() {
 	fmt.Println(q.String())
 	// site:"example.com" intext:"golang" filetype:"pdf"
 }
+```
