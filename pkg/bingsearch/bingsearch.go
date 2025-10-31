@@ -40,3 +40,10 @@ func (b *BingSearch) Group(q *BingSearch) *BingSearch {
 	b.tags = append(b.tags, fmt.Sprintf("(%s)", q.String()))
 	return b
 }
+
+// C
+
+func (b *BingSearch) Contains(value string) *BingSearch {
+	b.tags = append(b.tags, joinTag("contains:", value, true))
+	return b
+}
