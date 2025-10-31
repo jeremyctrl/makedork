@@ -66,3 +66,9 @@ func (g *GoogleSearch) After(date string) *GoogleSearch {
 	g.tags = append(g.tags, joinTag("after:", date, false))
 	return g
 }
+
+// B
+func (g *GoogleSearch) Before(date string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("before:", date, false))
+	return g
+}
