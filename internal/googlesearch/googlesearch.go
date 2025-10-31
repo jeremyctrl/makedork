@@ -119,6 +119,12 @@ func (g *GoogleSearch) Link(value string) *GoogleSearch {
 	return g
 }
 
+// P
+func (g *GoogleSearch) Plain(value string) *GoogleSearch {
+	g.tags = append(g.tags, value)
+	return g
+}
+
 // R
 func (g *GoogleSearch) Related(value string) *GoogleSearch {
 	g.tags = append(g.tags, joinTag("related:", value, true))
