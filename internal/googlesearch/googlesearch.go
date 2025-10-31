@@ -112,3 +112,9 @@ func (g *GoogleSearch) Link(value string) *GoogleSearch {
 	g.tags = append(g.tags, joinTag("link:", value, true))
 	return g
 }
+
+// R
+func (g *GoogleSearch) Related(value string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("related:", value, true))
+	return g
+}
