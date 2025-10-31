@@ -3,7 +3,7 @@ package googlesearch_test
 import (
 	"testing"
 
-	"github.com/jeremyctrl/godork/internal/googlesearch"
+	"github.com/jeremyctrl/makedork/internal/googlesearch"
 )
 
 func TestSite(t *testing.T) {
