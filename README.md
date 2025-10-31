@@ -2,6 +2,7 @@
 
 # makedork
 
+[![Go Reference](https://pkg.go.dev/badge/github.com/jeremyctrl/makedork.svg)](https://pkg.go.dev/github.com/jeremyctrl/makedork)
 [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
 Fluent, composable builder for crafting search dorks in Go.
