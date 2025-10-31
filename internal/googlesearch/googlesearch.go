@@ -78,3 +78,9 @@ func (g *GoogleSearch) Cache(value string) *GoogleSearch {
 	g.tags = append(g.tags, joinTag("cache:", value, true))
 	return g
 }
+
+// F
+func (g *GoogleSearch) FileType(value string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("filetype:", value, true))
+	return g
+}
