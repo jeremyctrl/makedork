@@ -84,3 +84,25 @@ func (g *GoogleSearch) FileType(value string) *GoogleSearch {
 	g.tags = append(g.tags, joinTag("filetype:", value, true))
 	return g
 }
+
+// I
+func (g *GoogleSearch) InAnchor(value string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("inanchor:", value, true))
+	return g
+}
+func (g *GoogleSearch) InPostAuthor(value string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("inpostauthor:", value, true))
+	return g
+}
+func (g *GoogleSearch) InText(value string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("intext:", value, true))
+	return g
+}
+func (g *GoogleSearch) InTitle(value string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("intitle:", value, true))
+	return g
+}
+func (g *GoogleSearch) InURL(value string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("inurl:", value, true))
+	return g
+}
