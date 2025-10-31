@@ -79,6 +79,12 @@ func (g *GoogleSearch) Cache(value string) *GoogleSearch {
 	return g
 }
 
+// E
+func (g *GoogleSearch) Exact(value string) *GoogleSearch {
+	g.tags = append(g.tags, strconv.Quote(value))
+	return g
+}
+
 // F
 func (g *GoogleSearch) FileType(value string) *GoogleSearch {
 	g.tags = append(g.tags, joinTag("filetype:", value, true))
