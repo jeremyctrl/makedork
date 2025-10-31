@@ -118,3 +118,9 @@ func (g *GoogleSearch) Related(value string) *GoogleSearch {
 	g.tags = append(g.tags, joinTag("related:", value, true))
 	return g
 }
+
+// S
+func (g *GoogleSearch) Site(value string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("site:", value, true))
+	return g
+}
