@@ -60,6 +60,13 @@ func (b *BingSearch) FileType(value string) *BingSearch {
 	return b
 }
 
+// H
+
+func (b *BingSearch) HasFeed(value string) *BingSearch {
+	b.tags = append(b.tags, joinTag("hasfeed:", value, true))
+	return b
+}
+
 // I
 
 func (b *BingSearch) InBody(value string) *BingSearch {
