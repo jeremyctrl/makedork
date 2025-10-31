@@ -72,3 +72,9 @@ func (g *GoogleSearch) Before(date string) *GoogleSearch {
 	g.tags = append(g.tags, joinTag("before:", date, false))
 	return g
 }
+
+// C
+func (g *GoogleSearch) Cache(value string) *GoogleSearch {
+	g.tags = append(g.tags, joinTag("cache:", value, true))
+	return g
+}
