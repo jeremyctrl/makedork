@@ -47,3 +47,10 @@ func (b *BingSearch) Contains(value string) *BingSearch {
 	b.tags = append(b.tags, joinTag("contains:", value, true))
 	return b
 }
+
+// F
+
+func (b *BingSearch) FileType(value string) *BingSearch {
+	b.tags = append(b.tags, joinTag("filetype:", value, true))
+	return b
+}
