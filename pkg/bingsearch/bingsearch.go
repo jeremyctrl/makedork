@@ -50,6 +50,11 @@ func (b *BingSearch) Contains(value string) *BingSearch {
 
 // F
 
+func (b *BingSearch) Feed(value string) *BingSearch {
+	b.tags = append(b.tags, joinTag("feed:", value, true))
+	return b
+}
+
 func (b *BingSearch) FileType(value string) *BingSearch {
 	b.tags = append(b.tags, joinTag("filetype:", value, true))
 	return b
